@@ -1,0 +1,15 @@
+/*pegamos los estilos globales*/
+:root {
+  --primary-color: #4e54c8;
+  --secondary-color: #8f94fb;
+  --dark-color: #2c3e50;
+  --light-color: #f8f9fa;
+  --accent-color: #ff6b6b;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
