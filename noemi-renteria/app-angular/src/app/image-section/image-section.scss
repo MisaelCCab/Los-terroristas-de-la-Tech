@@ -1,0 +1,25 @@
+.image-section {
+  flex: 0 0 150px;
+  position: relative;
+}
+
+.image-section::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background: linear-gradient(135deg, #6b7280, #9ca3af, #d1d5db);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.dog-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
