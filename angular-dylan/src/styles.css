@@ -1,0 +1,48 @@
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#222;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  position:relative;
+  background-image: url('assets/img/fondo.gif');
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+/* Contenedor encima del overlay */
+.container{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:900px;
+  background: rgba(255, 255, 255, 0.349);
+  border-radius:14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  padding:36px;
+  text-align:center;
+}
+
+h1{ color:#000000; font-size:2.4rem; margin-bottom:18px }
+h2{ color:#000000; font-size:1.25rem; margin:20px 0 12px }
+
+.interests-container{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap }
+.interest-item{
+  background:#f6f9fb75;
+  padding:12px 18px;
+  border-radius:10px;
+  border:1px solid #e6eef5;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.interest-item:hover{ transform: translateY(-6px); box-shadow:0 8px 20px rgba(33,110,190,.12) }
+
+/* Animacion */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.container{animation:fadeInUp .7s ease-out both}
